@@ -117,34 +117,34 @@ document.querySelector(".btn-lettuce").onclick=function () {
 //Challenge 1 - Add/Remove the class active to the buttons based on state
 function renderButtons() {
   if (state.Patty){
-    document.querySelector(".btn-patty").classList.remove("active")
-  }
-  else{
     document.querySelector(".btn-patty").classList.add("active")
   }
-  if (state.Cheese){
-    document.querySelector(".btn-cheese").classList.remove("active")
-  }
   else{
+    document.querySelector(".btn-patty").classList.remove("active")
+  }
+  if (state.Cheese){
     document.querySelector(".btn-cheese").classList.add("active")
   }
-  if (state.Tomatoes){
-    document.querySelector(".btn-tomatoes").classList.remove("active")
-  }
   else{
+    document.querySelector(".btn-cheese").classList.remove("active")
+  }
+  if (state.Tomatoes){
     document.querySelector(".btn-tomatoes").classList.add("active")
   }
-  if (state.Onions){
-    document.querySelector(".btn-onions").classList.remove("active")
-  }
   else{
+    document.querySelector(".btn-tomatoes").classList.remove("active")
+  }
+  if (state.Onions){
     document.querySelector(".btn-onions").classList.add("active")
   }
+  else{
+    document.querySelector(".btn-onions").classList.remove("active")
+  }
   if (state.Lettuce){
-    document.querySelector(".btn-lettuce").classList.remove("active")
+    document.querySelector(".btn-lettuce").classList.add("active")
   }
   else{
-    document.querySelector(".btn-lettuce").classList.add("active")
+    document.querySelector(".btn-lettuce").classList.remove("active")
   }
 
   
